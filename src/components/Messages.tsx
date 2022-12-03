@@ -15,10 +15,6 @@ interface MessageItem {
   username: string;
 }
 
-// async function decrypt_message(message: string, commonKey: CryptoKey) {
-//   return await decrypt(message, commonKey);
-// }
-
 const Messages = ({ socket, username, room, commonKey }: lProps) => {
   const [messagesRecieved, setMessagesReceived] = useState<MessageItem[]>([]);
 

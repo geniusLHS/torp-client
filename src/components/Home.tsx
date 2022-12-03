@@ -83,13 +83,6 @@ function Home() {
       let roomName = data;
       setRoom(roomName);
     });
-    // newSocket.on('receive_message', (data) => {
-    //   setMessageCount(messageCount + 1);
-    //   console.log(messageCount);
-    // if (messageCount % 5 == 0) {
-    // setKeyExchangeState(1);
-    // }
-    // });
 
     // 방이 없는 경우
     newSocket.on('room_not_exist', (data) => {
