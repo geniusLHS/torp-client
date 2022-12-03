@@ -44,9 +44,9 @@ const Messages = ({ socket, username, room, commonKey }: lProps) => {
 
   return (
     <div className="flex flex-col">
-      <div className="mb-2 flex h-96 w-[40rem] flex-col items-start overflow-x-hidden overflow-y-scroll rounded-lg border border-gray-300 pb-2" ref={messagesColumnRef}>
+      <div className="mb-2 flex h-96 flex-col items-start overflow-x-hidden overflow-y-scroll rounded-lg border border-gray-300 pb-2 md:w-[40rem]" ref={messagesColumnRef}>
         {messagesRecieved.map((msg, i) => (
-          <div className={'max-h-xl mx-2 mt-2 min-w-[15rem] max-w-xl rounded-lg border border-gray-300 p-2 ' + (msg.username == username ? 'self-end' : 'self-start')} key={i}>
+          <div className={'max-h-xl mx-2 mt-2 min-w-[10rem] max-w-xl rounded-lg border border-gray-300 p-2 md:min-w-[15rem] ' + (msg.username == username ? 'self-end' : 'self-start')} key={i}>
             <div className="text-sm text-blue-600">
               <span className="">{msg.username == username ? '나' : '상대'}</span>
             </div>

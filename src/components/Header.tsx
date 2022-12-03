@@ -11,7 +11,7 @@ function Header() {
               <img src={logo} alt="logo" className="h-8" />
             </a>
             <ul className="flex items-center space-x-1 text-sm sm:text-base">
-              <li className="hidden sm:block">
+              <li className="">
                 <a href="/about" className="block border-b-2 border-transparent py-3 px-2 text-center text-lg transition hover:border-blue-600 sm:px-3">
                   about
                 </a>

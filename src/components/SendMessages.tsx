@@ -34,9 +34,9 @@ const SendMessage = ({ socket, username, room, commonKey }: lProps) => {
   };
 
   return (
-    <div className="flex h-16 w-[40rem] items-center rounded-lg border border-gray-300">
-      <input className="mx-2 h-12 flex-grow border-b border-gray-300 px-3 text-lg focus:outline-none" onKeyDown={handleKeyPress} onChange={(e) => setMessage(e.target.value)} value={message} />
-      <button className="mr-2 h-12 shrink basis-24 rounded-lg bg-gray-200 text-lg hover:cursor-pointer hover:bg-gray-300 active:bg-gray-400" onClick={sendMessage}>
+    <div className="flex h-16 flex-row items-center rounded-lg border border-gray-300 md:w-[40rem]">
+      <input className="mx-2 h-12 w-full flex-grow border-b border-gray-300 px-3 text-lg focus:outline-none" onKeyDown={handleKeyPress} onChange={(e) => setMessage(e.target.value)} value={message} />
+      <button className="mr-2 h-12 min-w-[5rem] shrink basis-24 rounded-lg bg-gray-200 text-lg hover:cursor-pointer hover:bg-gray-300 active:bg-gray-400" onClick={sendMessage}>
         전송
       </button>
     </div>
