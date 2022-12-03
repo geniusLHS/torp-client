@@ -8,11 +8,11 @@ function Header() {
         <nav className="bg-white">
           <div className="flex items-center justify-start gap-10">
             <a href="." className="inline-flex items-center text-black">
-              <img src={logo} alt="logo" className="h-8" />
+              <img src={logo} alt="logo" className="h-7" />
             </a>
             <ul className="flex items-center space-x-1 text-sm sm:text-base">
               <li className="">
-                <a href="/about" className="block border-b-2 border-transparent py-3 px-2 text-center text-lg transition hover:border-blue-600 sm:px-3">
+                <a href="/about" className="block border-b-2 border-transparent py-4 px-2 text-center text-lg transition hover:border-blue-600 sm:px-3">
                   about
                 </a>
               </li>

@@ -6,7 +6,7 @@ function AboutContent() {
     <div className="flex w-full justify-center p-6 sm:p-10 md:p-16">
       <div className="w-[45rem] text-lg">
         <p className="inline text-2xl">
-          <img src={logo} alt="logo" className="-mt-1 inline h-7" /> 는 종단간 암호화를 지원하는 간단한 메시지 서비스 입니다.
+          <img src={logo} alt="logo" className="-mt-1 inline h-6" /> 는 종단간 암호화를 지원하는 간단한 메시지 서비스 입니다.
         </p>
         <br />
         <br />
