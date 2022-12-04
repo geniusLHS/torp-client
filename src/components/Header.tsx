@@ -8,7 +8,7 @@ function Header() {
         <nav className="bg-white">
           <div className="flex items-center justify-start gap-10">
             <a href="." className="inline-flex items-center text-black">
-              <img src={logo} alt="logo" className="h-7" />
+              <img src={logo} alt="logo" className="h-6" />
             </a>
             <ul className="flex items-center space-x-1 text-sm sm:text-base">
               <li className="">
