@@ -18,7 +18,7 @@ function Link({ roomName }: lProps) {
         <div className="flex flex-col justify-items-stretch bg-white p-7 md:p-10">
           <div
             className="break-all rounded-lg border border-gray-300 p-5 text-center text-lg text-gray-900 hover:cursor-pointer hover:bg-gray-100 active:bg-gray-200 md:p-10 md:text-xl"
-            onClick={() => handleCopyClipBoard('localhost:3000/?room=' + roomName)}
+            onClick={() => handleCopyClipBoard(`${process.env.REACT_APP_HOSTNAME}/?room=` + roomName)}
           >
             {roomName ? <span>https://torp.geniuslhs.com/?room={roomName}</span> : <span>통신중..</span>}
           </div>
