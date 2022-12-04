@@ -16,7 +16,7 @@ function App() {
     script.src = 'https://cdn.feedbank.app/plugin.js';
     script.defer = true;
     script.setAttribute('plugin-key', process.env.REACT_APP_FEEDBANK_KEY ?? 'TORP');
-    script.setAttribute('data-fb-button-color', '#e4e4e4');
+    // script.setAttribute('data-fb-button-color', '#e4e4e4');
     document.head.insertAdjacentElement('beforeend', script);
   }, []);
 

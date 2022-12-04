@@ -30,7 +30,7 @@ function AboutContent() {
           </li>
           <li>
             <p className="text-xl">3. 오픈소스입니다.</p>
-            <a href="https://github.com/geniusLHS/torp-server" target="_blank" className="mx-1 inline rounded-full bg-blue-50 p-0.5 px-1 hover:bg-blue-100">
+            <a href="https://github.com/geniusLHS/torp-server" target="_blank" className="mr-1 inline rounded-full bg-blue-50 p-0.5 px-1 hover:bg-blue-100">
               server
               <BiLinkExternal className="ml-1 inline"></BiLinkExternal>
             </a>
@@ -40,10 +40,12 @@ function AboutContent() {
               <BiLinkExternal className="ml-1 inline"></BiLinkExternal>
             </a>
             구현에 사용된 코드들은 github에서 모두 읽어보실 수 있습니다.
+            <br />
+            피드백은 왼쪽 아래의 '의견 보내기' 버튼을 활용해주세요.
           </li>
         </ul>
         <br />
-        <div className="mt-16 w-full border-t border-t-[#898ea4] pt-10 text-center text-sm text-gray-500">© 2022 geniusLHS</div>
+        <div className="mt-10 w-full border-t border-t-[#898ea4] pt-10 text-center text-sm text-gray-500">© 2022 geniusLHS</div>
       </div>
     </div>
   );
