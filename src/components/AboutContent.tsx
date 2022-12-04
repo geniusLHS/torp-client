@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './../images/logo.png';
+import { BiLinkExternal } from 'react-icons/bi';
 
 function AboutContent() {
   return (
@@ -29,7 +30,16 @@ function AboutContent() {
           </li>
           <li>
             <p className="text-xl">3. 오픈소스입니다.</p>
-            server와 client 구현에 사용된 코드들은 github에서 모두 읽어보실 수 있습니다.
+            <a href="https://github.com/geniusLHS/torp-server" target="_blank" className="mx-1 inline rounded-full bg-blue-50 p-0.5 px-1 hover:bg-blue-100">
+              server
+              <BiLinkExternal className="ml-1 inline"></BiLinkExternal>
+            </a>
+            와
+            <a href="https://github.com/geniusLHS/torp-client" target="_blank" className="mx-1 inline rounded-full bg-blue-50 p-0.5 px-1 hover:bg-blue-100">
+              client
+              <BiLinkExternal className="ml-1 inline"></BiLinkExternal>
+            </a>
+            구현에 사용된 코드들은 github에서 모두 읽어보실 수 있습니다.
           </li>
         </ul>
         <br />
