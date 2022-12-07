@@ -8,7 +8,7 @@ import deriveKey from '../utils/deriveKey';
 import Chat from './Chat';
 import Expired from './Expired';
 
-const newSocket = io('http://localhost:4000', {
+const newSocket = io(process.env.REACT_APP_SERVER ?? 'react_app_server_undefined', {
   transports: ['websocket'],
   upgrade: false,
   forceNew: true,
